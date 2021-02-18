@@ -70,7 +70,8 @@ void Game::prepare()
 	spider2 = Sprite(m_pRenderer, "spider.png", 0, 197, 40, 62, 220, 0, 100, 100);
 	spider3 = Sprite(m_pRenderer, "spider.png", 481, 39, 39, 39, 75, 300, 80, 80);
 	projectile = Sprite(m_pRenderer, "web.png", 26, 14, 82, 84, 220, 150, 100, 100);
-	
+	hero = Sprite(m_pRenderer, "ok.png", 0, 0, 42, 54, 280, 150, 100, 100);
+	cd = Sprite(m_pRenderer, "CD.png", 0, 0, 1200, 1194, 250, 120, 20, 20);
 }
 
 void Game::handleEvents()
@@ -111,6 +112,7 @@ void Game::render()
 	projectile.draw(m_pRenderer);
 	hero.draw(m_pRenderer);
 	obstacle.draw(m_pRenderer);
+	cd.draw(m_pRenderer);
 	//draw to the screen
 	SDL_RenderPresent(m_pRenderer);
 }

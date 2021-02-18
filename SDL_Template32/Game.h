@@ -32,7 +32,7 @@ private:
 	Sprite projectile;
 	Sprite obstacle;
 	Sprite dragon;
-
+	Sprite cd;
 	SDL_Window* m_pWindow;
 	SDL_Renderer* m_pRenderer;
 	
